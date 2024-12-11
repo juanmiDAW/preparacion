@@ -1,0 +1,36 @@
+BD:
+crear usuario BD: sudo -u postgres createuser -P nombreusuario
+crear BD: psql -h localhost -U usuario -d basedatos
+modificar .env
+hacer migraciones: php artisan migrate
+deshacer migraciones: php artisan migrate:rollback
+entrar BD: php artisan db 
+
+Crear poyecto: composer create-project --prefer-dist laravel/laravel nombre proyecto
+correr servidor: composer run dev
+instalar npm: npm install
+crear modelo con todo: php artisan make:model -cmrfs Nombre
+
+Breeze:
+Instalar:
+composer require laravel/breeze --dev
+php artisan breeze:install
+
+Consultas:
+Consultas INSERT INTO tabla (campo1, campo2) VALUES (valor1, valor2);
+SELECT * FROM tabla;
+SELECT * FROM tabla; -- Obtiene todos los campos y registros
+SELECT columna1, columna2 FROM tabla; -- Obtiene campos específicos
+SELECT * FROM tabla WHERE columna = 'valor'; -- Filtra resultados
+SELECT * FROM tabla ORDER BY columna ASC; -- Ordena de forma ascendente
+SELECT * FROM tabla ORDER BY columna DESC; -- Ordena de forma descendente
+
+UPDATE tabla SET columna1 = 'nuevo_valor' WHERE condicion;
+UPDATE empleados SET salario = 3000 WHERE id = 5;
+
+DELETE FROM tabla WHERE condicion;
+DELETE FROM clientes WHERE id = 10;
+
+
+
+
