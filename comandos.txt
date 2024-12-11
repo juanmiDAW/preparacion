@@ -50,7 +50,7 @@ Route::get("/cliente/{id}/articulo", function($id){
 Route::resource('articulos', ArticuloController::class);
 
 Zip
-Comprimir: zip archivo_comprimido.zip archivo_o_carpeta
+Comprimir: zip -r archivo_comprimido.zip archivo_o_carpeta
 Descomprimir: unzip archivo_comprimido.zip
 
 Generar clave de encriptacion: php artisan key:generate
