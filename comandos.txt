@@ -46,6 +46,13 @@ comando copiar carpeta: cp -r carpeta_origen carpeta_destino
 Rutas:
 Route::get("/cliente/{id}/articulo", function($id){
 	return Cliente::find($id)->articulo;
+	
+Route::resource('articulos', ArticuloController::class);
+
+Zip
+Comprimir: zip archivo_comprimido.zip archivo_o_carpeta
+Descomprimir: unzip archivo_comprimido.zip
+
 
 
 
