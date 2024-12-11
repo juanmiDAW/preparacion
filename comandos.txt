@@ -31,6 +31,25 @@ UPDATE empleados SET salario = 3000 WHERE id = 5;
 DELETE FROM tabla WHERE condicion;
 DELETE FROM clientes WHERE id = 10;
 
+Asignacion masiva:
+protected $fillable = ['nombre', 'apellido'];
+
+Manipulacion de campos (eloquent)
+$variable = Modelo::where('columna', valor)->get();
+$variable = Modelo::all();
+$variable = Modelo::orderBy('columna', 'asc');
+$variable = Modelo::take(numero);  coje n valores
+
+
+comando copiar carpeta: cp -r carpeta_origen carpeta_destino
+
+Rutas:
+Route::get("/cliente/{id}/articulo", function($id){
+	return Cliente::find($id)->articulo;
+
+
+
+
 
 
 
