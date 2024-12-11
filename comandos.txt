@@ -53,6 +53,9 @@ Zip
 Comprimir: zip archivo_comprimido.zip archivo_o_carpeta
 Descomprimir: unzip archivo_comprimido.zip
 
+Generar clave de encriptacion: php artisan key:generate
+
+
 
 
 
